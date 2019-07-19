@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Avatar</ion-title>
+    <ion-buttons slot="end" >
+      <ion-avatar>
+        <img src="/assets/user1.jpg">
+      </ion-avatar>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding-horizontal">
+  
+  <ion-list-header>
+    Perfil
+  </ion-list-header>
+  
+  <ion-avatar class="ion-margin-start">
+    <img src="/assets/user1.jpg">
+  </ion-avatar>
+
+
+  <ion-chip color="primary" *ngFor="let c of [1,1,1,1,1,1]; let i = index">
+      <ion-avatar>
+        <img src="/assets/user{{i+1}}.jpg">
+      </ion-avatar>
+      <ion-label color="primary">User Test</ion-label>
+    </ion-chip>
+
+  <ion-list>
+    <ion-list-header>
+        <ion-label>Listado de Usuarios</ion-label>
+    </ion-list-header>
+    <!-- Avatar - Texto-->
+    <ion-item *ngFor="let c of [1,1,1,1,1,1]; let i = index">
+      <ion-avatar slot="start">
+        <img src="/assets/user{{i+1}}.jpg">
+      </ion-avatar>
+      <ion-label>
+        <h3>Usuario Test</h3>
+        <p>Analista de Procesos</p>
+      </ion-label>
+    </ion-item>
+    <!-- Texto - Avatar -->
+    <ion-item *ngFor="let c of [1,1,1,1,1,1]; let i = index">
+      <ion-label>
+
+          <ion-label>
+              <h3>Usuario Test</h3>
+              <p>Arquitecto de Software</p>
+            </ion-label>
+      </ion-label>
+      <ion-avatar slot="end">
+        <img src="/assets/user{{i+1}}.jpg">
+      </ion-avatar>
+    </ion-item>
+  </ion-list>
+</ion-content>

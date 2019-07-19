@@ -51,7 +51,7 @@ export class ActionSheetPage implements OnInit {
     await actionSheet.present();
   }
 
-  
+
   ngOnInit() {
   }
 

@@ -1,0 +1,42 @@
+<ion-header no-border>
+    <ion-toolbar>
+      <ion-buttons slot='start'>
+        <ion-back-button defaultHref="/"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Button</ion-title>
+      <ion-buttons slot='end'>
+          <ion-button>
+              <ion-icon  name="star" color="primary"></ion-icon>
+            </ion-button>   
+        <ion-button>
+          <ion-icon  name="heart" color="primary"></ion-icon>
+        </ion-button> 
+        
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content padding>
+  <!-- Botones normales-->
+  <ion-button color='primary' expand='full' size='small'>Small</ion-button>
+  <ion-button color='danger' expand='full' size='default'>Default</ion-button>
+  <ion-button color='tertiary' expand='full' size='large'>Large</ion-button>
+
+  <!-- Navegar-->
+  <ion-button class='mt-20' color='success' expand='full' routerLink="/alert">Alerta</ion-button>
+
+  <!-- Columnas-->
+  <ion-row>
+    <ion-col>
+        <ion-button color='warning' expand='full' routerLink="/action-sheet">Action Sheet</ion-button>
+    </ion-col>
+    <ion-col>
+        <ion-button color='dark' expand='full' routerLink="/avatar">Avatar</ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-button class='mt-20' fill='clear'>Clear</ion-button>
+  <ion-button class='mt-20' fill='outline'>Outline</ion-button>
+  <ion-button class='mt-20' fill='solid'>Solid</ion-button>
+
+</ion-content>
